@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "name": "Highlight Reel",
+    "category": "chain",
+    "description": "Collect Recordings -> Generate Music -> Assemble -> Export",
+    "estimated_minutes": 8,
+    "tags": ["highlight", "reel", "music", "video"]
+  },
+  "nodes": {
+    "1": {
+      "class_type": "chain.config.MusicSettings",
+      "inputs": {
+        "genre": "electronic",
+        "quality": "balanced"
+      },
+      "position": [60, 280]
+    },
+    "2": {
+      "class_type": "chain.record.CollectRecordings",
+      "inputs": {
+        "directory": "data/recordings",
+        "max_files": 10
+      },
+      "position": [60, 80]
+    },
+    "3": {
+      "class_type": "chain.probe.ProbeDuration",
+      "inputs": {
+        "recording_path": ["2", 0]
+      },
+      "position": [380, 80]
+    },
+    "4": {
+      "class_type": "chain.music.GenerateMusic",
+      "inputs": {
+        "video_duration": ["3", 0],
+        "music_genre": ["1", 0],
+        "music_quality": ["1", 1]
+      },
+      "position": [380, 280]
+    },
+    "5": {
+      "class_type": "chain.edit.AssembleJustEdit",
+      "inputs": {
+        "recording_path": ["2", 0],
+        "music_path": ["4", 0],
+        "video_title": "OnyxKraken Highlights"
+      },
+      "position": [700, 160]
+    },
+    "6": {
+      "class_type": "chain.export.ExportVideo",
+      "inputs": {
+        "recording_path": ["2", 0],
+        "music_path": ["4", 0],
+        "video_duration": ["3", 0]
+      },
+      "position": [1000, 160]
+    }
+  }
+}

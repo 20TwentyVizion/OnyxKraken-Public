@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "name": "Quick Track",
+    "description": "Generate a music track from a genre and theme. Starts EVERA, generates, then shuts down.",
+    "category": "music",
+    "icon": "\u26a1",
+    "tags": ["beginner", "evera", "single"],
+    "difficulty": "easy"
+  },
+  "nodes": {
+    "1": {
+      "class_type": "evera.service.Start",
+      "inputs": {},
+      "position": [100, 140]
+    },
+    "2": {
+      "class_type": "onyx.input.TextInput",
+      "inputs": {"text": "electronic"},
+      "position": [100, 300]
+    },
+    "3": {
+      "class_type": "onyx.input.TextInput",
+      "inputs": {"text": "midnight city lights"},
+      "position": [100, 440]
+    },
+    "4": {
+      "class_type": "evera.generate.Track",
+      "inputs": {
+        "genre": ["2", 0],
+        "theme": ["3", 0],
+        "duration": 240,
+        "quality_profile": "standard"
+      },
+      "position": [420, 260]
+    },
+    "5": {
+      "class_type": "onyx.output.Log",
+      "inputs": {
+        "value": ["4", 0],
+        "label": "Generated Track"
+      },
+      "position": [740, 200]
+    },
+    "6": {
+      "class_type": "evera.service.Stop",
+      "inputs": {
+        "passthrough": ["4", 1]
+      },
+      "position": [740, 400]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "block": [
+    {"app": "*", "action": "key_press", "target": "alt+f4"},
+    {"app": "cmd", "action": "*", "target": "*"},
+    {"app": "powershell", "action": "*", "target": "*"},
+    {"app": "*", "action": "key_press", "target": "ctrl+shift+delete"}
+  ],
+  "allow": [
+    {"app": "notepad", "action": "type", "target": "*"},
+    {"app": "notepad", "action": "click", "target": "*"},
+    {"app": "chrome", "action": "click", "target": "*"},
+    {"app": "chrome", "action": "type", "target": "*"},
+    {"app": "grok", "action": "click", "target": "*"},
+    {"app": "grok", "action": "type", "target": "*"},
+    {"app": "grok", "action": "key_press", "target": "enter"},
+    {"app": "blender", "action": "click", "target": "*"},
+    {"app": "blender", "action": "key_press", "target": "*"},
+    {"app": "blender", "action": "type", "target": "*"},
+    {"app": "blender", "action": "scroll", "target": "*"},
+    {"app": "blender", "action": "blender_python", "target": "*"},
+    {"app": "blender", "action": "blender_query", "target": "*"},
+    {"app": "obs", "action": "click", "target": "*"},
+    {"app": "obs", "action": "key_press", "target": "*"},
+    {"app": "*", "action": "read_file", "target": "*"},
+    {"app": "*", "action": "search_files", "target": "*"},
+    {"app": "*", "action": "close_window", "target": "*"},
+    {"app": "*", "action": "launch_tool", "target": "*"},
+    {"app": "onyx calculator", "action": "click", "target": "*"},
+    {"app": "onyx calculator", "action": "type", "target": "*"},
+    {"app": "onyx calculator", "action": "key_press", "target": "*"},
+    {"app": "onyx notepad", "action": "click", "target": "*"},
+    {"app": "onyx notepad", "action": "type", "target": "*"},
+    {"app": "onyx notepad", "action": "key_press", "target": "*"},
+    {"app": "reddit", "action": "click", "target": "*"},
+    {"app": "reddit", "action": "type", "target": "*"},
+    {"app": "reddit", "action": "key_press", "target": "*"},
+    {"app": "reddit", "action": "scroll", "target": "*"}
+  ]
+}

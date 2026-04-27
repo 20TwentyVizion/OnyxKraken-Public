@@ -1,0 +1,13 @@
+[
+  {
+    "id": "house-demo-001",
+    "title": "Episode 4: DJ Onyx — First Drop",
+    "description": "Onyx produces a full-length House track live — from concept to finished audio. The first step toward full DJ set capability.",
+    "file": "/videos/house-demo-001.mp4",
+    "thumbnail": null,
+    "duration": 720,
+    "tags": ["house", "music", "dj", "live-demo"],
+    "createdAt": "2026-02-24T15:00:00Z",
+    "type": "music_demo"
+  }
+]

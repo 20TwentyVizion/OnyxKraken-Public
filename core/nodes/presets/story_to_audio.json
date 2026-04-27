@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "name": "Story to Soundtrack",
+    "description": "Write a story in SmartEngine, then generate a matching soundtrack in EVERA based on the story mood.",
+    "category": "cross-app",
+    "icon": "\ud83d\udcda",
+    "tags": ["smartengine", "evera", "cross-app", "creative"],
+    "difficulty": "intermediate"
+  },
+  "nodes": {
+    "1": {
+      "class_type": "smartengine.service.Start",
+      "inputs": {},
+      "position": [100, 140]
+    },
+    "2": {
+      "class_type": "smartengine.project.Create",
+      "inputs": {
+        "name": "Story with Soundtrack"
+      },
+      "position": [420, 140]
+    },
+    "3": {
+      "class_type": "onyx.input.TextInput",
+      "inputs": {"text": "A lone astronaut discovers an ancient alien radio signal on the dark side of the moon. The music plays a melody no human has ever heard."},
+      "position": [100, 340]
+    },
+    "4": {
+      "class_type": "smartengine.discover.Discover",
+      "inputs": {
+        "project_id": ["2", 1],
+        "message": ["3", 0]
+      },
+      "position": [420, 340]
+    },
+    "5": {
+      "class_type": "smartengine.architect.Generate",
+      "inputs": {
+        "project_id": ["2", 1]
+      },
+      "position": [740, 200]
+    },
+    "6": {
+      "class_type": "evera.service.Start",
+      "inputs": {},
+      "position": [740, 420]
+    },
+    "7": {
+      "class_type": "evera.generate.Track",
+      "inputs": {
+        "genre": "ambient",
+        "mood": "mysterious",
+        "theme": "alien radio signal from the dark side of the moon",
+        "duration": 240,
+        "quality_profile": "standard"
+      },
+      "position": [1060, 340]
+    },
+    "8": {
+      "class_type": "onyx.output.Log",
+      "inputs": {
+        "value": ["5", 0],
+        "label": "Story Structure"
+      },
+      "position": [1060, 140]
+    },
+    "9": {
+      "class_type": "onyx.output.Log",
+      "inputs": {
+        "value": ["7", 0],
+        "label": "Soundtrack"
+      },
+      "position": [1380, 280]
+    },
+    "10": {
+      "class_type": "smartengine.service.Stop",
+      "inputs": {
+        "passthrough": ["5", 0]
+      },
+      "position": [1380, 100]
+    },
+    "11": {
+      "class_type": "evera.service.Stop",
+      "inputs": {
+        "passthrough": ["7", 1]
+      },
+      "position": [1380, 460]
+    }
+  }
+}

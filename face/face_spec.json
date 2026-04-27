@@ -1,0 +1,318 @@
+{
+  "_comment": "Single source of truth for OnyxKraken face design. Consumed by Python face_gui.py and JS faceRenderer.js.",
+  "reference": {
+    "width": 400,
+    "height": 360
+  },
+  "colors": {
+    "bg": "#050810",
+    "face": "#0c1220",
+    "face_border": "#0e2a3d",
+    "eye_sclera": "#0a1828",
+    "eye_pupil": "#00d4ff",
+    "eye_glow_inner": "#005580",
+    "eye_glow_outer": "#002838",
+    "eye_highlight": "#eefaff",
+    "mouth_interior": "#040810",
+    "accent_bright": "#00d4ff",
+    "accent_mid": "#006688",
+    "accent_dim": "#0e2a3d",
+    "accent_vdim": "#091520"
+  },
+  "emotion_accents": {
+    "neutral": "#00d4ff",
+    "thinking": "#4488ff",
+    "curious": "#00eeff",
+    "satisfied": "#44ffaa",
+    "confused": "#ff8844",
+    "determined": "#8888ff",
+    "amused": "#ffcc44",
+    "surprised": "#ff66aa",
+    "listening": "#66ffcc",
+    "working": "#44aaff",
+    "focused": "#55ccff",
+    "happy": "#44ff88",
+    "sad": "#6688cc",
+    "excited": "#ff88ff",
+    "skeptical": "#cc8844",
+    "proud": "#88aaff"
+  },
+  "geometry": {
+    "eye_width": 54,
+    "eye_height": 62,
+    "eye_spacing": 100,
+    "eye_y": 130,
+    "pupil_radius": 13,
+    "pupil_max_ox": 14,
+    "pupil_max_oy": 10,
+    "mouth_y": 250,
+    "mouth_width": 70,
+    "mouth_height": 10
+  },
+  "animation": {
+    "blink_interval_min": 2.5,
+    "blink_interval_max": 6.0,
+    "blink_duration": 0.12,
+    "double_blink_chance": 0.25,
+    "gaze_change_min": 0.8,
+    "gaze_change_max": 3.5,
+    "gaze_speed": 5.0,
+    "fps": 60
+  },
+  "phonemes": {
+    "types": [
+      "closed",
+      "small",
+      "medium",
+      "wide",
+      "round",
+      "teeth"
+    ],
+    "char_map": {
+      "a": "wide",
+      "e": "medium",
+      "i": "medium",
+      "o": "round",
+      "u": "round",
+      "b": "closed",
+      "m": "closed",
+      "p": "closed",
+      "f": "teeth",
+      "v": "teeth",
+      "w": "round",
+      "r": "small",
+      "l": "medium",
+      "n": "small",
+      "t": "small",
+      "d": "small",
+      "s": "small",
+      "z": "small",
+      "k": "small",
+      "g": "small",
+      "h": "medium",
+      "y": "medium",
+      "j": "medium",
+      " ": "closed",
+      ".": "closed",
+      ",": "closed",
+      "!": "closed",
+      "?": "closed"
+    },
+    "targets": {
+      "closed": [
+        0.0,
+        1.0
+      ],
+      "small": [
+        0.3,
+        0.85
+      ],
+      "medium": [
+        0.55,
+        1.0
+      ],
+      "wide": [
+        0.9,
+        1.2
+      ],
+      "round": [
+        0.65,
+        0.5
+      ],
+      "teeth": [
+        0.25,
+        1.15
+      ]
+    },
+    "chars_per_sec": 12.0
+  },
+  "themes": {
+    "cyan": {
+      "label": "Cyan (Default)",
+      "accent_bright": "#00d4ff",
+      "accent_mid": "#006688",
+      "accent_dim": "#0e2a3d",
+      "accent_vdim": "#091520",
+      "eye_pupil": "#00d4ff",
+      "eye_glow_inner": "#005580",
+      "eye_glow_outer": "#002838",
+      "face_border": "#0e2a3d"
+    },
+    "emerald": {
+      "label": "Emerald",
+      "accent_bright": "#00ff88",
+      "accent_mid": "#008844",
+      "accent_dim": "#0e3d2a",
+      "accent_vdim": "#091d15",
+      "eye_pupil": "#00ff88",
+      "eye_glow_inner": "#005530",
+      "eye_glow_outer": "#002818",
+      "face_border": "#0e3d2a"
+    },
+    "violet": {
+      "label": "Violet",
+      "accent_bright": "#aa66ff",
+      "accent_mid": "#6633aa",
+      "accent_dim": "#2a1a4d",
+      "accent_vdim": "#150d28",
+      "eye_pupil": "#aa66ff",
+      "eye_glow_inner": "#553388",
+      "eye_glow_outer": "#281848",
+      "face_border": "#2a1a4d"
+    },
+    "amber": {
+      "label": "Amber",
+      "accent_bright": "#ffaa00",
+      "accent_mid": "#886600",
+      "accent_dim": "#3d2a0e",
+      "accent_vdim": "#201509",
+      "eye_pupil": "#ffaa00",
+      "eye_glow_inner": "#805500",
+      "eye_glow_outer": "#382800",
+      "face_border": "#3d2a0e"
+    },
+    "rose": {
+      "label": "Rose",
+      "accent_bright": "#ff66aa",
+      "accent_mid": "#aa3366",
+      "accent_dim": "#3d1a2a",
+      "accent_vdim": "#200d15",
+      "eye_pupil": "#ff66aa",
+      "eye_glow_inner": "#882244",
+      "eye_glow_outer": "#401028",
+      "face_border": "#3d1a2a"
+    },
+    "crimson": {
+      "label": "Crimson",
+      "accent_bright": "#ff3344",
+      "accent_mid": "#882222",
+      "accent_dim": "#3d1515",
+      "accent_vdim": "#200a0a",
+      "eye_pupil": "#ff3344",
+      "eye_glow_inner": "#801818",
+      "eye_glow_outer": "#400c0c",
+      "face_border": "#3d1515"
+    },
+    "sunset": {
+      "label": "Sunset",
+      "accent_bright": "#ff6633",
+      "accent_mid": "#aa4422",
+      "accent_dim": "#3d1a0e",
+      "accent_vdim": "#200d06",
+      "eye_pupil": "#ff6633",
+      "eye_glow_inner": "#883318",
+      "eye_glow_outer": "#40180c",
+      "face_border": "#3d1a0e"
+    },
+    "ice": {
+      "label": "Ice",
+      "accent_bright": "#88ddff",
+      "accent_mid": "#4488aa",
+      "accent_dim": "#1a3344",
+      "accent_vdim": "#0d1a22",
+      "eye_pupil": "#88ddff",
+      "eye_glow_inner": "#336688",
+      "eye_glow_outer": "#1a3344",
+      "face_border": "#1a3344"
+    },
+    "pink": {
+      "label": "Pink (Xyno)",
+      "accent_bright": "#ff69b4",
+      "accent_mid": "#cc3388",
+      "accent_dim": "#4d1a33",
+      "accent_vdim": "#260d1a",
+      "eye_pupil": "#ff69b4",
+      "eye_glow_inner": "#993366",
+      "eye_glow_outer": "#4d1a33",
+      "face_border": "#4d1a33"
+    }
+  },
+  "eye_styles": {
+    "default": {
+      "label": "Default (Oval)",
+      "shape": "oval",
+      "corner_radius": 0
+    },
+    "round": {
+      "label": "Round",
+      "shape": "circle",
+      "corner_radius": 0
+    },
+    "angular": {
+      "label": "Angular",
+      "shape": "hexagon",
+      "corner_radius": 0
+    },
+    "narrow": {
+      "label": "Narrow (Slit)",
+      "shape": "narrow",
+      "corner_radius": 0
+    },
+    "wide": {
+      "label": "Wide",
+      "shape": "wide",
+      "corner_radius": 0
+    }
+  },
+  "face_shapes": {
+    "default": {
+      "label": "Default (Rounded Rect)",
+      "shape": "rounded_rect"
+    },
+    "circle": {
+      "label": "Circle",
+      "shape": "circle"
+    },
+    "hexagon": {
+      "label": "Hexagon",
+      "shape": "hexagon"
+    },
+    "diamond": {
+      "label": "Diamond",
+      "shape": "diamond"
+    },
+    "shield": {
+      "label": "Shield",
+      "shape": "shield"
+    }
+  },
+  "accessories": {
+    "none": {
+      "label": "None"
+    },
+    "antenna": {
+      "label": "Antenna"
+    },
+    "headphones": {
+      "label": "Headphones"
+    },
+    "visor": {
+      "label": "Visor"
+    },
+    "halo": {
+      "label": "Halo"
+    },
+    "horns": {
+      "label": "Horns"
+    }
+  },
+  "emotion_presets": {
+    "neutral":    { "squint": 0.0,   "brow_raise": 0.0,   "eye_widen": 0.0,  "mouth_curve": 0.0,   "pupil_size": 1.0,  "gaze_speed": 1.0,  "blink_rate": 1.0,  "intensity": 0.0  },
+    "thinking":   { "squint": 0.35,  "brow_raise": -0.40, "eye_widen": 0.0,  "mouth_curve": -0.15, "pupil_size": 0.80, "gaze_speed": 0.3,  "blink_rate": 0.4,  "intensity": 0.80 },
+    "curious":    { "squint": -0.20, "brow_raise": 0.55,  "eye_widen": 0.30, "mouth_curve": 0.10,  "pupil_size": 1.25, "gaze_speed": 1.6,  "blink_rate": 1.2,  "intensity": 0.80 },
+    "satisfied":  { "squint": 0.25,  "brow_raise": 0.15,  "eye_widen": 0.0,  "mouth_curve": 0.80,  "pupil_size": 1.05, "gaze_speed": 0.4,  "blink_rate": 0.6,  "intensity": 0.80 },
+    "confused":   { "squint": 0.10,  "brow_raise": -0.60, "eye_widen": 0.40, "mouth_curve": -0.50, "pupil_size": 1.15, "gaze_speed": 2.0,  "blink_rate": 1.5,  "intensity": 0.90 },
+    "determined": { "squint": 0.40,  "brow_raise": -0.50, "eye_widen": 0.0,  "mouth_curve": -0.10, "pupil_size": 0.78, "gaze_speed": 0.2,  "blink_rate": 0.35, "intensity": 0.90 },
+    "amused":     { "squint": 0.22,  "brow_raise": 0.35,  "eye_widen": 0.12, "mouth_curve": 0.90,  "pupil_size": 1.12, "gaze_speed": 0.8,  "blink_rate": 1.0,  "intensity": 0.85 },
+    "surprised":  { "squint": -0.40, "brow_raise": 0.75,  "eye_widen": 0.55, "mouth_curve": 0.0,   "pupil_size": 1.40, "gaze_speed": 0.15, "blink_rate": 0.2,  "intensity": 0.95 },
+    "listening":  { "squint": -0.08, "brow_raise": 0.35,  "eye_widen": 0.18, "mouth_curve": 0.0,   "pupil_size": 1.18, "gaze_speed": 0.4,  "blink_rate": 0.75, "intensity": 0.60 },
+    "working":    { "squint": 0.25,  "brow_raise": -0.22, "eye_widen": 0.0,  "mouth_curve": 0.0,   "pupil_size": 0.88, "gaze_speed": 0.5,  "blink_rate": 0.6,  "intensity": 0.60 },
+    "focused":    { "squint": 0.30,  "brow_raise": -0.30, "eye_widen": 0.0,  "mouth_curve": -0.10, "pupil_size": 0.82, "gaze_speed": 0.2,  "blink_rate": 0.35, "intensity": 0.80 },
+    "happy":      { "squint": 0.30,  "brow_raise": 0.40,  "eye_widen": 0.12, "mouth_curve": 1.0,   "pupil_size": 1.18, "gaze_speed": 0.7,  "blink_rate": 0.8,  "intensity": 0.95 },
+    "sad":        { "squint": 0.10,  "brow_raise": -0.65, "eye_widen": 0.0,  "mouth_curve": -0.80, "pupil_size": 0.80, "gaze_speed": 0.2,  "blink_rate": 0.45, "intensity": 0.85 },
+    "excited":    { "squint": -0.25, "brow_raise": 0.65,  "eye_widen": 0.45, "mouth_curve": 0.95,  "pupil_size": 1.38, "gaze_speed": 1.8,  "blink_rate": 1.4,  "intensity": 0.95 },
+    "skeptical":  { "squint": 0.20,  "brow_raise": -0.35, "eye_widen": 0.10, "mouth_curve": -0.30, "pupil_size": 1.08, "gaze_speed": 0.5,  "blink_rate": 0.55, "intensity": 0.75 },
+    "proud":      { "squint": 0.15,  "brow_raise": 0.28,  "eye_widen": 0.05, "mouth_curve": 0.60,  "pupil_size": 1.08, "gaze_speed": 0.3,  "blink_rate": 0.5,  "intensity": 0.75 },
+    "sleep":      { "squint": 0.90,  "brow_raise": -0.20, "eye_widen": -0.5, "mouth_curve": 0.0,   "pupil_size": 0.10, "gaze_speed": 0.0,  "blink_rate": 0.0,  "intensity": 1.0  }
+  }
+}

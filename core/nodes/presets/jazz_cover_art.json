@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "name": "Jazz Track + Album Cover",
+    "description": "Cross-extension demo: EVERA generates a jazz instrumental track, SmartEngine generates a square album cover with AI background and professional text overlay. Tests pulling from two extensions for one task.",
+    "category": "cross-app",
+    "icon": "\ud83c\udfb7",
+    "tags": ["demo", "evera", "smartengine", "cross-app", "jazz", "album-cover"],
+    "difficulty": "intermediate"
+  },
+  "nodes": {
+    "1": {
+      "class_type": "evera.service.Start",
+      "inputs": {},
+      "position": [100, 100]
+    },
+    "2": {
+      "class_type": "onyx.input.TextInput",
+      "inputs": {"text": "Midnight at the Blue Note"},
+      "position": [100, 260]
+    },
+    "3": {
+      "class_type": "onyx.input.TextInput",
+      "inputs": {"text": "The Onyx Quartet"},
+      "position": [100, 400]
+    },
+    "4": {
+      "class_type": "evera.generate.Track",
+      "inputs": {
+        "genre": "jazz",
+        "mood": "smooth",
+        "theme": "late night jazz club, smoky atmosphere, upright bass and piano",
+        "duration": 180,
+        "instrumental": true,
+        "quality_profile": "standard"
+      },
+      "position": [440, 100]
+    },
+    "5": {
+      "class_type": "smartengine.image.AlbumCover",
+      "inputs": {
+        "title": ["2", 0],
+        "artist": ["3", 0],
+        "genre": "jazz",
+        "backend": "pollinations"
+      },
+      "position": [440, 340]
+    },
+    "6": {
+      "class_type": "onyx.output.Log",
+      "inputs": {
+        "value": ["4", 0],
+        "label": "EVERA Track Info"
+      },
+      "position": [800, 100]
+    },
+    "7": {
+      "class_type": "onyx.output.Log",
+      "inputs": {
+        "value": ["4", 1],
+        "label": "Audio File Path"
+      },
+      "position": [800, 220]
+    },
+    "8": {
+      "class_type": "onyx.output.Log",
+      "inputs": {
+        "value": ["5", 0],
+        "label": "Album Cover Path"
+      },
+      "position": [800, 340]
+    },
+    "9": {
+      "class_type": "onyx.output.Log",
+      "inputs": {
+        "value": ["5", 1],
+        "label": "Cover Art Result"
+      },
+      "position": [800, 460]
+    },
+    "10": {
+      "class_type": "evera.service.Stop",
+      "inputs": {
+        "passthrough": ["4", 0]
+      },
+      "position": [1100, 100]
+    }
+  }
+}

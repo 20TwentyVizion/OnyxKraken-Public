@@ -1,0 +1,10 @@
+{
+  "id": "default",
+  "name": "Onyx Classic",
+  "version": "1.0.0",
+  "author": "OnyxKraken",
+  "description": "The original OnyxKraken face — cyan neon robot with oval eyes and CRT scan lines.",
+  "price": 0,
+  "tags": ["default", "robot", "cyan", "classic"],
+  "spec_overrides": {}
+}

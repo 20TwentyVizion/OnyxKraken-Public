@@ -1,0 +1,247 @@
+[
+  {
+    "id": "battle-1772769106",
+    "timestamp": "2026-03-06T03:51:46.498631+00:00",
+    "dj1": {
+      "name": "DJ Onyx",
+      "color": "#00e5ff"
+    },
+    "dj2": {
+      "name": "DJ Phantom",
+      "color": "#ff4466"
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "dj1Track": "/battles/battle-1772769106/r1-dj_onyx.mp3",
+        "dj2Track": "/battles/battle-1772769106/r1-dj_phantom.mp3",
+        "dj1Score": 69.8,
+        "dj2Score": 73.6,
+        "dj1Grade": "B",
+        "dj2Grade": "B",
+        "winner": "phantom",
+        "margin": 3.8,
+        "commentary": "Round 1 is in the books! This was a close one across the board! Razor thin! DJ Phantom edges out DJ Onyx by a hair!",
+        "crowdReaction": "roar"
+      },
+      {
+        "round": 2,
+        "dj1Track": "",
+        "dj2Track": "",
+        "dj1Score": 0.0,
+        "dj2Score": 0.0,
+        "dj1Grade": "",
+        "dj2Grade": "",
+        "winner": "onyx",
+        "margin": 0.0,
+        "commentary": "DJ Phantom choked! DJ Onyx wins by default!",
+        "crowdReaction": ""
+      },
+      {
+        "round": 3,
+        "dj1Track": "",
+        "dj2Track": "",
+        "dj1Score": 0.0,
+        "dj2Score": 0.0,
+        "dj1Grade": "",
+        "dj2Grade": "",
+        "winner": "phantom",
+        "margin": 0.0,
+        "commentary": "DJ Onyx couldn't deliver! DJ Phantom wins by default!",
+        "crowdReaction": ""
+      },
+      {
+        "round": 4,
+        "dj1Track": "",
+        "dj2Track": "",
+        "dj1Score": 0.0,
+        "dj2Score": 0.0,
+        "dj1Grade": "",
+        "dj2Grade": "",
+        "winner": "phantom",
+        "margin": 0.0,
+        "commentary": "DJ Onyx couldn't deliver! DJ Phantom wins by default!",
+        "crowdReaction": ""
+      },
+      {
+        "round": 5,
+        "dj1Track": "",
+        "dj2Track": "",
+        "dj1Score": 0.0,
+        "dj2Score": 0.0,
+        "dj1Grade": "",
+        "dj2Grade": "",
+        "winner": "phantom",
+        "margin": 0.0,
+        "commentary": "DJ Onyx couldn't deliver! DJ Phantom wins by default!",
+        "crowdReaction": ""
+      }
+    ],
+    "dj1Wins": 1,
+    "dj2Wins": 4,
+    "ties": 0,
+    "winner": "DJ Phantom",
+    "refereeIntro": "Ladies and gentlemen! Welcome to the Beat Battle! In the left corner, DJ Onyx! In the right corner, DJ Phantom! Five rounds, sixty seconds each, instrumental rap beats only! First to three wins takes it all! Let's GO!",
+    "refereeOutro": "UPSET! DJ Phantom takes the battle 4 to 1! What a performance! DJ Phantom came to WIN tonight!",
+    "format": "5 rounds × 60s instrumental rap"
+  },
+  {
+    "id": "battle-1772695211",
+    "timestamp": "2026-03-05T07:20:11.914312+00:00",
+    "dj1": {
+      "name": "DJ Vizion",
+      "color": "#00e5ff"
+    },
+    "dj2": {
+      "name": "DJ Phantom",
+      "color": "#ff4466"
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "dj1Track": "/battles/battle-1772695211/r1-dj_vizion.mp3",
+        "dj2Track": "/battles/battle-1772695211/r1-dj_phantom.mp3",
+        "dj1Score": 68.3,
+        "dj2Score": 67.6,
+        "dj1Grade": "B",
+        "dj2Grade": "B",
+        "winner": "tie",
+        "margin": 0.7,
+        "commentary": "Round 1 is in the books! This was a close one across the board! The crowd is SPLIT! Dead heat — no one takes this round!",
+        "crowdReaction": "split"
+      },
+      {
+        "round": 2,
+        "dj1Track": "/battles/battle-1772695211/r2-dj_vizion.mp3",
+        "dj2Track": "/battles/battle-1772695211/r2-dj_phantom.mp3",
+        "dj1Score": 68.9,
+        "dj2Score": 65.9,
+        "dj1Grade": "B",
+        "dj2Grade": "B",
+        "winner": "onyx",
+        "margin": 3.0,
+        "commentary": "Round 2 is in the books! DJ Phantom crushed the energy in this one! Razor thin! DJ Vizion edges out DJ Phantom by a hair!",
+        "crowdReaction": "roar"
+      },
+      {
+        "round": 3,
+        "dj1Track": "/battles/battle-1772695211/r3-dj_vizion.mp3",
+        "dj2Track": "/battles/battle-1772695211/r3-dj_phantom.mp3",
+        "dj1Score": 73.3,
+        "dj2Score": 70.5,
+        "dj1Grade": "B",
+        "dj2Grade": "B",
+        "winner": "onyx",
+        "margin": 2.8,
+        "commentary": "Round 3 is in the books! DJ Vizion crushed the production in this one! Razor thin! DJ Vizion edges out DJ Phantom by a hair!",
+        "crowdReaction": "roar"
+      },
+      {
+        "round": 4,
+        "dj1Track": "/battles/battle-1772695211/r4-dj_vizion.mp3",
+        "dj2Track": "/battles/battle-1772695211/r4-dj_phantom.mp3",
+        "dj1Score": 69.4,
+        "dj2Score": 67.3,
+        "dj1Grade": "B",
+        "dj2Grade": "B",
+        "winner": "onyx",
+        "margin": 2.1,
+        "commentary": "Round 4 is in the books! DJ Phantom crushed the production in this one! Razor thin! DJ Vizion edges out DJ Phantom by a hair!",
+        "crowdReaction": "roar"
+      }
+    ],
+    "dj1Wins": 3,
+    "dj2Wins": 0,
+    "ties": 1,
+    "winner": "DJ Vizion",
+    "refereeIntro": "Ladies and gentlemen! Welcome to the Beat Battle! In the left corner, DJ Vizion! In the right corner, DJ Phantom! Five rounds, sixty seconds each, instrumental rap beats only! First to three wins takes it all! Let's GO!",
+    "refereeOutro": "AND THAT'S IT! DJ Vizion takes the battle 3 to 0! The crowd is on their feet! DJ Vizion is UNSTOPPABLE!",
+    "format": "5 rounds × 60s instrumental rap"
+  },
+  {
+    "id": "battle-1771956836",
+    "timestamp": "2026-02-24T18:13:56.661155+00:00",
+    "dj1": {
+      "name": "DJ Onyx",
+      "color": "#00e5ff"
+    },
+    "dj2": {
+      "name": "DJ Phantom",
+      "color": "#ff4466"
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "dj1Track": "/battles/battle-1771956836/r1-onyx.mp3",
+        "dj2Track": "/battles/battle-1771956836/r1-phantom.mp3",
+        "dj1Score": 66.7,
+        "dj2Score": 71.2,
+        "dj1Grade": "B",
+        "dj2Grade": "B",
+        "winner": "phantom",
+        "margin": 4.6,
+        "commentary": "Round 1 is in the books! DJ Phantom crushed the rhythm in this one! Razor thin! DJ Phantom edges out DJ Onyx by a hair!",
+        "crowdReaction": "roar"
+      },
+      {
+        "round": 2,
+        "dj1Track": "/battles/battle-1771956836/r2-onyx.mp3",
+        "dj2Track": "/battles/battle-1771956836/r2-phantom.mp3",
+        "dj1Score": 76.0,
+        "dj2Score": 60.9,
+        "dj1Grade": "B",
+        "dj2Grade": "B",
+        "winner": "onyx",
+        "margin": 15.0,
+        "commentary": "Round 2 is in the books! DJ Onyx crushed the production in this one! DJ Onyx absolutely dominated! The crowd goes WILD!",
+        "crowdReaction": "dominant"
+      },
+      {
+        "round": 3,
+        "dj1Track": "/battles/battle-1771956836/r3-onyx.mp3",
+        "dj2Track": "/battles/battle-1771956836/r3-phantom.mp3",
+        "dj1Score": 74.6,
+        "dj2Score": 75.1,
+        "dj1Grade": "B",
+        "dj2Grade": "B",
+        "winner": "tie",
+        "margin": 0.6,
+        "commentary": "Round 3 is in the books! This was a close one across the board! The crowd is SPLIT! Dead heat — no one takes this round!",
+        "crowdReaction": "split"
+      },
+      {
+        "round": 4,
+        "dj1Track": "/battles/battle-1771956836/r4-onyx.mp3",
+        "dj2Track": "/battles/battle-1771956836/r4-phantom.mp3",
+        "dj1Score": 72.5,
+        "dj2Score": 77.1,
+        "dj1Grade": "B",
+        "dj2Grade": "A",
+        "winner": "phantom",
+        "margin": 4.5,
+        "commentary": "Round 4 is in the books! DJ Phantom crushed the rhythm in this one! Razor thin! DJ Phantom edges out DJ Onyx by a hair!",
+        "crowdReaction": "roar"
+      },
+      {
+        "round": 5,
+        "dj1Track": "/battles/battle-1771956836/r5-onyx.mp3",
+        "dj2Track": "/battles/battle-1771956836/r5-phantom.mp3",
+        "dj1Score": 77.5,
+        "dj2Score": 66.4,
+        "dj1Grade": "B",
+        "dj2Grade": "B",
+        "winner": "onyx",
+        "margin": 11.1,
+        "commentary": "Round 5 is in the books! DJ Onyx crushed the energy in this one! DJ Onyx takes it with a solid lead!",
+        "crowdReaction": "roar"
+      }
+    ],
+    "dj1Wins": 2,
+    "dj2Wins": 2,
+    "ties": 1,
+    "winner": "Tie",
+    "refereeIntro": "Ladies and gentlemen! Welcome to the Beat Battle! In the left corner, DJ Onyx! In the right corner, DJ Phantom! Five rounds, sixty seconds each, instrumental rap beats only! First to three wins takes it all! Let's GO!",
+    "refereeOutro": "DEAD HEAT! It's a TIE at 2 to 2! Both DJs left everything on the table! We need a rematch!",
+    "format": "5 rounds × 60s instrumental rap"
+  }
+]

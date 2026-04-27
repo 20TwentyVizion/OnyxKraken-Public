@@ -1,0 +1,45 @@
+{
+  "calculator": {
+    "name": "calculator",
+    "display_name": "Onyx Calculator",
+    "description": "Fully functional arithmetic calculator with history, keyboard support, and dark theme",
+    "script_path": "calculator/app.py",
+    "replaces": [
+      "calc",
+      "calculator",
+      "Calculator"
+    ],
+    "capabilities": [
+      "arithmetic",
+      "percentage",
+      "sign toggle",
+      "backspace",
+      "keyboard input"
+    ],
+    "status": "preferred",
+    "version": 1,
+    "window_title": "Onyx Calculator"
+  },
+  "notepad": {
+    "name": "notepad",
+    "display_name": "Onyx Notepad",
+    "description": "Text editor with file open/save, search, undo, and keyboard shortcuts",
+    "script_path": "notepad/app.py",
+    "replaces": [
+      "notepad",
+      "Notepad",
+      "notepad.exe"
+    ],
+    "capabilities": [
+      "text editing",
+      "file open",
+      "file save",
+      "find/search",
+      "undo/redo",
+      "keyboard shortcuts"
+    ],
+    "status": "preferred",
+    "version": 1,
+    "window_title": "Onyx Notepad"
+  }
+}

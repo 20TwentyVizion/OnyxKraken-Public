@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "name": "Music Video Pipeline",
+    "description": "Cross-app workflow: generate a track in EVERA, write a scene description in SmartEngine, import both into JustEdit.",
+    "category": "cross-app",
+    "icon": "\ud83c\udfac",
+    "tags": ["advanced", "evera", "smartengine", "justedit", "cross-app"],
+    "difficulty": "advanced"
+  },
+  "nodes": {
+    "1": {
+      "class_type": "evera.service.Start",
+      "inputs": {},
+      "position": [100, 100]
+    },
+    "2": {
+      "class_type": "smartengine.service.Start",
+      "inputs": {},
+      "position": [100, 260]
+    },
+    "3": {
+      "class_type": "onyx.input.TextInput",
+      "inputs": {"text": "electronic"},
+      "position": [100, 420]
+    },
+    "4": {
+      "class_type": "onyx.input.TextInput",
+      "inputs": {"text": "neon-lit chase through a cyberpunk cityscape at midnight"},
+      "position": [100, 560]
+    },
+    "5": {
+      "class_type": "evera.generate.Track",
+      "inputs": {
+        "genre": ["3", 0],
+        "theme": ["4", 0],
+        "mood": "dark",
+        "duration": 180,
+        "quality_profile": "standard"
+      },
+      "position": [440, 300]
+    },
+    "6": {
+      "class_type": "smartengine.project.Create",
+      "inputs": {
+        "name": "Music Video Script"
+      },
+      "position": [440, 520]
+    },
+    "7": {
+      "class_type": "smartengine.discover.Discover",
+      "inputs": {
+        "project_id": ["6", 1],
+        "message": ["4", 0]
+      },
+      "position": [760, 520]
+    },
+    "8": {
+      "class_type": "justedit.service.Start",
+      "inputs": {},
+      "position": [760, 700]
+    },
+    "9": {
+      "class_type": "justedit.import.Audio",
+      "inputs": {
+        "audio_path": ["5", 1],
+        "project_name": "Music Video",
+        "track_name": "Generated Track"
+      },
+      "position": [1080, 300]
+    },
+    "10": {
+      "class_type": "onyx.output.Log",
+      "inputs": {
+        "value": ["9", 0],
+        "label": "JustEdit Project"
+      },
+      "position": [1400, 300]
+    },
+    "11": {
+      "class_type": "evera.service.Stop",
+      "inputs": {
+        "passthrough": ["5", 0]
+      },
+      "position": [1080, 100]
+    },
+    "12": {
+      "class_type": "smartengine.service.Stop",
+      "inputs": {
+        "passthrough": ["7", 0]
+      },
+      "position": [1080, 520]
+    }
+  }
+}
